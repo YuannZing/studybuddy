@@ -1,8 +1,8 @@
 {
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "studybud/wsgi.py"
-      }
-    ]
-  }
+  "builds": [
+    { "src": "studybud/wsgi.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "studybud/wsgi.py" }
+  ]
+}
